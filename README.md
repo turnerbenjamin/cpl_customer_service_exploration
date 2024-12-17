@@ -8,4 +8,4 @@ Customer Service.
 
 This repo documents my activities in completing these scenarios.
 
-Please refer to the markdown files in the scenarios repository.
+Please refer to the markdown files in the scenarios directory.
