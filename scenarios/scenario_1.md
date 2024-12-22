@@ -7,26 +7,26 @@ with trying the new case functionality before rolling it out to your users.
 In this task, you will create new customer cases and create phone calls
 associated with the cases.
 
-**Create Custom Table**
+### Create Custom Table
 
 In this exercise, you will be creating two new custom tables. These tables will
 link to cases. You will create two many-to-one relationships for the Case and
 Custom tables. Add sub-grids for the many-to-many relationship between Case and
 Custom tables to the case form.
 
-**Create Case**
+### Create Case
 
 In this exercise, you will create an Account, a Contact, and a Case record. You
 will also add a Phone Call activity to the case.
 
-**Create Case from an Activity**
+### Create Case from an Activity
 
 In this exercise, you will create a Phone Call activity and then convert the
 activity to a Case.
 
 ## Actions
 
-**Create Custom Table**
+### Actions: Create Custom Table
 
 Two custom tables have been created with a many to one relationship with the
 case table.
@@ -50,7 +50,7 @@ skills under this type including:
 
 These tables and the sub-grids are evident in screenshots for the next sections.
 
-**Create Case**
+### Actions: Create Case
 
 A case has been created disputing an estimated meter reading. An Account (Lone
 Gunmen), and Contact (Richard Langly) have also been created.
