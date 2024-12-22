@@ -43,7 +43,7 @@ of scenarios where the child flow will not these set values. I wanted to let the
 parent flows handle this situation, so both parent flows have a guard clause to
 check that these values have been set.
 
-With the create a flow, an email is sent after the guard clause. With the
+With the create flow, an email is sent after the guard clause. With the
 reopen/resolve flow there is a switch statement to send an appropriate email
 depending on whether the case was reopened or resolved.
 
