@@ -41,7 +41,13 @@ The second table is service requests. The thinking here is that a service
 request may be added to a case to try and resolve an issue. If the issue is not
 resolved then follow-up service requests may be added.
 
-Both tables also have a many to one relationship with Bookable Resources. I have
+Having progressed through the learning materials for MB-230, I can see that this
+second table mimics functionality built into Customer Service. If I was to do
+this excercise again, I would create a Customer Facilities table. This reflects
+the fact that a business may operate out of one or more locations and that a
+subset of these locations may be affected in a given case.
+
+Both tables have a many to one relationship with Bookable Resources. I have
 created a Bookable Resource Characteristic Type of Engineering and a number of
 skills under this type including:
 

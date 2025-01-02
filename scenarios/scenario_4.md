@@ -63,7 +63,7 @@ In addition to the subject field:
 
 For queue routing I have set-up three rules corresponding to those in the record
 creation. These simply check the subject field of the email and route to the
-appopriate queue:
+appropriate queue:
 
 ![Case based routing rule items](../images/s4_4.png)
 _Case based routing rule items_

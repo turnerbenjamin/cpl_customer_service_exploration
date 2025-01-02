@@ -21,10 +21,10 @@ For this scenario, three flows have been created.
 ![Custom flows for email notifications](../images/s5_1.png)
 _Custom flows for email notifications_
 
-A single flow may have worked, but I could not see a way to do this without
-modifying the incident record. I was reluctant to modify a record with the sole
-aim of controlling the notification flow, so I decided to use two parent flows
-and a child flow containing common logic.
+A single flow may have worked, but I could not see a way to do this reliably
+without modifying the incident record. I was reluctant to modify a record with
+the sole aim of controlling the notification flow, so I decided to use two
+parent flows and a child flow containing common logic.
 
 ### Actions: Parent Flows
 
@@ -37,11 +37,11 @@ triggers have been customised as follows:
 ![Overview of Reopen/Resolve flow](../images/s5_2.png)
 _Overview of Reopen/Resolve flow_
 
-Both parent flows use the "Try read customer contact detatils" child flow to
-extract an email and name from the customer field of the case. There are a number
-of scenarios where the child flow will not these set values. I wanted to let the
-parent flows handle this situation, so both parent flows have a guard clause to
-check that these values have been set.
+Both parent flows use the "Try read customer contact details" child flow to
+extract an email and name from the customer field of the case. There are a
+number of scenarios where the child flow will not set these values. I wanted to
+let the parent flows handle this situation, so both parent flows have a guard
+clause to check that these values have been set.
 
 With the create flow, an email is sent after the guard clause. With the
 reopen/resolve flow there is a switch statement to send an appropriate email
@@ -51,7 +51,9 @@ depending on whether the case was reopened or resolved.
 
 This child flow is responsible for looking at the customer record and returning
 a name and an email. An early iteration of this flow used variables, this was
-able to account for more situations but it was not very readable.
+able to account for more situations but it was not very readable and I was
+concerned that if more values were needed in the future it would become
+increasingly bloated.
 
 I have opted for the version below to try and keep the flow simple and readable:
 
@@ -61,7 +63,7 @@ _Overview of the child flow_
 As mentioned, there are cases where the flow will return empty values for the
 contact details. This is handled by the parent flows.
 
-I have tested the following scenarios manually and can give details if needed:
+I have tested the following scenarios manually:
 
 - Customer is a contact with an email address
 - Customer is a contact without an email address
