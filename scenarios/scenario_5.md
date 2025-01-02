@@ -72,11 +72,11 @@ I have tested the following scenarios manually:
 - Customer is an account with no primary contact and an email address
 - Customer is an account with no primary contact and no email address
 
-The second to last scenario listed is not handled well by the simplified version
-I have opted for. The previous version would use the email from the account and
-the name from the primary contact. I have decided, rightly or wrongly, that this
-is an acceptable compromise to keep things readable and avoid over-engineering
-the flow.
+The fourth scenario listed is not handled well by the simplified version I have
+opted for. The previous version would use the email from the account and the
+name from the primary contact. I have decided, rightly or wrongly, that this is
+an acceptable compromise to keep things readable and avoid over-engineering the
+flow.
 
 ## Demonstration
 
