@@ -73,7 +73,7 @@ _Creation of a case with an attached phone call_
 ![Meter reading subgrid](../images/s1_2.png)
 _Meter reading sub-grid for the above case_
 
-**Create Case from an Activity**
+### Actions: Create Case from an Activity
 
 For this exercise a phone call activity has been created for a power outage.
 This has then been converted to a case.
